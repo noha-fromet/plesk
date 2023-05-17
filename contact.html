@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contactez-nous | Campus méditerranéen du numérique</title>
+    <link rel="stylesheet" href="laplateforme.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.86);
+            color: black;
+        }
+        td, th {
+            padding: 8px;
+        }
+        input[type=text], input[type=email], input[type=tel], select, textarea {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li><a href="aws-Restart.html">AWS Restart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">Actualités</a></li>
+        <li><a href="Plateforme-start.html">Plateforme Start</a></li>
+      </ul>
+    
+    <h1>La Plateforme / Contact</h1>
+    <p>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</p>
+    <form action="submit-form" method="post">
+        <p>« * » indique les champs nécessaires</p>
+        <table>
+            <tr>
+                <td><label for="prefix">Identité* Prefixe:</label></td>
+                <td>
+                    <select name="prefix" id="prefix">
+                        <option value="mr">Mr.</option>
+                        <option value="mme">Mme.</option>
+                        <option value="mx">Mx.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="name">Prénom Nom:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail*:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Téléphone*:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr> 
+            <tr> 
+                <td><label for=contact-reason>motif contact*Sélectionner un motif de contact*:</label></td> 
+                <td> 
+                    <select name=contact-reason id=contact-reason> 
+                        <option value=orientation>Aide à l'orientation et informations sur les programmes</option> 
+                        <option value=entreprise>Relations Entreprises</option> 
+                        <option value=presse>Presse / Partenariat / Communication</option> 
+                        <option value=candidature>Suivi de candidatures</option> 
+                        <option value=recrutement>Recrutement RH</option> 
+                        <option value=autre>Autre</option> 
+                    </select> 
+                </td> 
+            </tr> 
+            <tr> 
+                <td><label for=message>message*:</label></td> 
+                <td><textarea id=message name=message></textarea></td> 
+            </tr> 
+            <tr> 
+                <td colspan=2> 
+                    <input type=checkbox id=opt-in name=opt-in> 
+                    <label for=opt-in>J'accepte de recevoir des informations de la part de La Plateforme</label> 
+                </td> 
+            </tr> 
+        </table> 
+        <br><br> 
+        <input type=submit value=Envoyer> 
+    </form>
+
+    <h2>Une autre question ?</h2> 
+    <p>Nous sommes aussi joignables :</p>
+
+    – Par email contact@laplateforme.io<br> 
+    – Par téléphone au 04.84.89.43.69 du lundi au vendredi de 9h à 17h<br> 
+    – Sur les réseaux sociaux<br>
+
+</body> 
+</html>
+
